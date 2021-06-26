@@ -1,9 +1,11 @@
 # aruco_create_detecte
 
-# mkdir build
-# cd build
-# cmake ..
-# make 
+# compile the project
+
+ mkdir build
+ cd build
+ cmake ..
+ make 
 
 # create maker
 

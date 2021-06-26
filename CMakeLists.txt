@@ -33,16 +33,7 @@ include_directories(${OpenCV_INCLUDE_DIRS})
 
 
 find_package(Boost REQUIRED)
-find_package(PCL REQUIRED)
 find_package(Eigen3 REQUIRED)
-
-
-find_package(PCL REQUIRED)
-include_directories(${PCL_INCLUDE_DIRS})
-add_definitions(${PCL_DEFINITIONS})
-link_directories(${PCL_LIBRARY_DIRS})
-
-include_directories(${OpenCV_INCLUDE_DIRS})
 
 
 include_directories(${OpenCV_INCLUDE_DIRS} ${EIGEN3_INCLUDE_DIR})
@@ -56,8 +47,6 @@ endif(COMMAND cmake_policy)
 set (CMAKE_CXX_STANDARD 11)
 find_package(OpenCV REQUIRED)
 
-include_directories(${OPENCV_INCLUDE_DIRS})
-include_directories(${PROJECT_SOURCE_DIR}/include)
 
 link_directories(${OpenCV_LIBRARY_DIRS})
 
